@@ -1,0 +1,431 @@
+/**
+ * AriBase v1.2
+ * https://github.com/aristorinjuang/aribase
+ * 
+ * MIT license
+ * http://opensource.org/licenses/MIT
+ * 
+ * Copyright (c) 2015 Aristo Rinjuang
+ */
+
+
+/**
+ * Set your 'body' typography.
+ */
+
+body {
+	color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42em;
+}
+
+/**
+ * Remove the 'margin'.
+ */
+
+body,
+dd,
+fieldset,
+figure,
+.list-plain,
+ol ol,
+ul ul {
+	margin: 0;
+}
+
+/**
+ * Remove the 'padding'.
+ */
+
+fieldset,
+legend,
+.list-plain {
+	padding: 0;
+}
+
+/**
+ * 'details' and 'summary' are not supported by Internet Explorer and Firefox.
+ * 'main' is not supported by Internet Explorer.
+ * Force them to display 'block'.
+ */
+
+details,
+main,
+summary {
+	display: block;
+}
+
+/**
+ * Remove the default 'outline' of 'summary'.
+ */
+
+summary {
+	outline: none;
+}
+
+/**
+ * Remove 'border' on 'img' in Internet Explorer.
+ * Remove the default style of 'abbr'.
+ */
+
+abbr,
+img {
+	border: none;
+}
+
+/**
+ * These tags are not defined by default.
+ * Set them to be good as inline.
+ */
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: baseline;
+}
+
+/**
+ * Change default 'border' of 'iframe'.
+ */
+
+iframe {
+	border: 1px solid #ccc;
+}
+
+/**
+ * 'overflow' on 'svg' is not 'hidden' on Internet Explorer.
+ * Make it 'hidden'.
+ */
+
+svg {
+	overflow: hidden;
+}
+
+/**
+ * Change the default of 'font-size'.
+ */
+
+small,
+sub,
+sup {
+	font-size: 0.72em;
+}
+
+/**
+ * Change the default style of 'sub' and 'sup'.
+ */
+
+sub,
+sup {
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.5ex;
+}
+
+sup {
+	top: -1ex;
+}
+
+/**
+ * Set your heading style!
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1.2em;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0 0 0.67em;
+}
+
+h2 {
+	font-size: 1.71em;
+	margin: 0 0 0.66em;
+}
+
+h3 {
+	font-size: 1.42em;
+	margin: 0 0 0.7em;
+}
+
+h4 {
+	font-size: 1.28em;
+	margin: 0 0 0.75em;
+}
+
+h5 {
+	font-size: 1.14em;
+	margin: 0 0 0.6875em;
+}
+
+h6 {
+	font-size: 1em;
+	margin: 0 0 0.71em;
+}
+
+/**
+ * They have the same 'margin'.
+ */
+
+address,
+details,
+hr,
+ol,
+p,
+pre,
+table,
+ul {
+	margin: 0 0 1.14em;
+}
+
+blockquote,
+dl {
+	margin: 1.14em;
+}
+
+/**
+ * Remove the default 'background' on Internet Explorer for active state of 'a'.
+ */
+
+a {
+	background: none;
+}
+
+/**
+ * Set the default style for 'ol' and 'ul'.
+ */
+
+ol,
+ul {
+	padding: 0 1.14em 0;
+}
+
+ol {
+	list-style-type: decimal;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+/**
+ * Give 'padding-left' for 'dd'.
+ */
+
+dd {
+	padding-left: 1.14em;
+}
+
+/**
+ * Set the default style for 'table'.
+ * 'table' with 'table-plain' class means it is pure without any style.
+ * Overwrite 'table' with 'table-plain' class to remove any style such as default.
+ */
+
+table {
+	border-spacing: 0;
+	width: 100%;
+}
+
+table.table-plain {
+
+}
+
+td,
+th {
+	font-weight: normal;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+}
+
+table.table-plain td,
+table.table-plain th {
+
+}
+
+/**
+ * Change the default of 'hr'.
+ */
+
+hr {
+	background: #000;
+	border: none;
+	height: 1px;
+}
+
+/**
+ * Set the default style for 'blockquote'.
+ */
+
+blockquote {
+	color: #666;
+	font-style: italic;
+}
+
+/**
+ * Change default font of them.
+ */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: "Andale Mono", "Lucida Console", monospace;
+}
+
+/**
+ * The most used 'input' for form.
+ * Set them with your style!
+ */
+
+fieldset {
+	border: none;
+}
+
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="url"],
+select,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: none;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	box-sizing: border-box;
+	font-family: inherit;
+	font-size: 1em;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	width: 150px;
+}
+
+textarea {
+	overflow: auto;
+	resize: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin: 3px;
+}
+
+/**
+ * Give them the button style!
+ */
+
+a.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+
+}
+
+a.button {
+
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+button[disabled="disabled"],
+input[disabled="disabled"] {
+	cursor: default;
+}
+
+/**
+ * Activate it to custom your selection!
+ * Or delete if you don't use it!
+ */
+
+/*
+::selection {
+
+}
+
+::-moz-selection {
+
+}
+*/
+
+/**
+ * Activate it to custom your placeholder!
+ * Or delete if you don't use it!
+ */
+
+/*
+::-webkit-input-placeholder {
+
+}
+
+::-moz-placeholder {
+
+}
+
+:-ms-input-placeholder {
+
+}
+*/
+
+/**
+ * These classes are the most used.
+ */
+
+.row:after,
+.row:before {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.list-plain {
+	list-style: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.error,
+.required {
+	color: red;
+}
