@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AriBase</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="aribase.css" />
+	<style>
+		#container {
+			box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+			margin: 30px auto;
+			max-width: 940px;
+			padding: 10px;
+			transition: all 0.3s;
+		}
+
+		a.test-image {
+			color: red;
+		}
+
+		@media only screen and (max-width: 960px) {
+			#container {
+				box-shadow: none;
+				margin: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main id="container">
+		<!-- Heading -->
+		<section id="heading">
+			<h1>This is Heading 1</h1>
+			<h2>This is Heading 2</h2>
+			<h3>This is Heading 3</h3>
+			<h4>This is Heading 4</h4>
+			<h5>This is Heading 5</h5>
+			<h6>This is Heading 6</h6>
+		</section>
+		
+		<hr />
+		
+		<!-- Paragraph -->
+		<section id="paragraph">
+			<p>This is dummy <a href="#">content</a>. It is build to test <a href="#" class="button">AriBase</a>. Set <b>your</b> own <strong>typography</strong>! Then <i>come</i> back <em>here</em> to see how it <u>works</u>. What you read is the paragraph <del>section</del>. This paragraph contains the most used tags for <ins>typography</ins>. Do not overwrite <mark>AriBase</mark>. Just change the <q>CSS property</q> or add the new one based on your <s>style</s>. <samp>AriBase gives you some classes</samp> which contains the most used <abbr>CSS</abbr> properties. <kbd>You can edit those classes</kbd> or remove it if you <var>do not</var> use it. There are some <small>sections into this file</small>. Make sure your typography works <sub>with</sub> <sup>them</sup>, on the latest browsers which support <code>HTML5 and CSS3</code>. Make sure it is consistent, no bug and no overwriting.</p>
+		</section>
+		
+		<hr />
+		
+		<!-- Details and Definition -->
+		<section id="details-definition">
+			<details>
+				<summary>This is 'summary'. The descendant of 'details'. Make sure it is block.</summary>
+				<p>This is in 'details'. The content of 'details'. This is after 'summary'.</p>
+			</details>
+			<dl>
+				<dt>This is Term 1</dt>
+				<dd>The value of Description 1</dd>
+				<dt>This is Term 2</dt>
+				<dd>The value of Description 2</dd>
+			</dl>
+		</section>
+		
+		<hr />
+		
+		<!-- Blockquote and Pre -->
+		<section id="blockquote-pre">
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+			</blockquote>
+			<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+			</pre>
+		</section>
+		
+		<hr />
+		
+		<!-- Image and SVG -->
+		<section id="image-svg">
+			<p>
+				<a href="#" class="test-image"><img src="http://placehold.it/300x300" alt="Test Image" /></a>
+				
+				<svg width="300px" height="300px">
+					<circle cx="300" cy="300" r="300" fill="#ccc" />
+				</svg>
+				
+				<audio controls="controls">Your browser does not support the audio element.</audio>
+				
+				<canvas id="canvas">Your browser does not support the HTML5 canvas tag.</canvas>
+				
+				<progress value="22" max="100"></progress>
+				
+				<video width="320" height="240" controls="controls">Your browser does not support the video tag.</video>
+			</p>
+		</section>
+		
+		<hr />
+		
+		<!-- List -->
+		<section id="list">
+			<ul>
+			   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			   <li>Aliquam tincidunt mauris eu risus.</li>
+			   <li>Vestibulum auctor dapibus neque.</li>
+			</ul>
+			<ol>
+			   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			   <li>Aliquam tincidunt mauris eu risus.</li>
+			   <li>Vestibulum auctor dapibus neque.</li>
+			</ol>
+			
+			<ul class="list-plain">
+			   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			   <li>Aliquam tincidunt mauris eu risus.</li>
+			   <li>Vestibulum auctor dapibus neque.</li>
+			</ul>
+			<ol class="list-plain">
+			   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			   <li>Aliquam tincidunt mauris eu risus.</li>
+			   <li>Vestibulum auctor dapibus neque.</li>
+			</ol>
+		</section>
+		
+		<hr />
+		
+		<!-- Table -->
+		<section id="table">
+			<table>
+				<thead>
+					<tr>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+					</tr>
+					<tr>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+					</tr>
+					<tr>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<table class="table-plain">
+				<thead>
+					<tr>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+						<th>Table Heading</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+					</tr>
+					<tr>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+					</tr>
+					<tr>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+						<td>Table Item</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		
+		<hr />
+		
+		<!-- Form -->
+		<section id="form">
+			<form action="#" method="post">
+				<fieldset>
+					<legend>Standard Form</legend>
+					<div>
+						<input type="text" placeholder="Text" />
+					</div>
+					<div>
+						<input type="email" placeholder="Email" />
+					</div>
+					<div>
+						<input type="password" placeholder="Password" />
+					</div>
+					<div>
+						<input type="search" placeholder="Search" />
+					</div>
+					<div>
+						<select>
+							<option value="">-- Select --</option>
+							<optgroup label="Option Group 1">
+								<option>Option 1</option>
+								<option selected="selected">Option 2</option>
+								<option>Option 3</option>
+							</optgroup>
+							<optgroup label="Option Group 2">
+								<option>Option 4</option>
+								<option>Option 5</option>
+							</optgroup>
+						</select>
+					</div>
+					<div>
+						<textarea placeholder="Textarea"></textarea>
+					</div>
+					<div>
+						<div>
+							<input type="radio" name="radio" id="radio-1" />
+							<label for="radio-1">Radio 1</label>
+						</div>
+						<div>
+							<input type="radio" name="radio" id="radio-2" />
+							<label for="radio-2">Radio 2</label>
+						</div>
+					</div>
+					<div>
+						<div>
+							<input type="checkbox" name="checkbox" id="checkbox-1" />
+							<label for="checkbox-1">Checkbox 1</label>
+						</div>
+						<div>
+							<input type="checkbox" name="checkbox" id="checkbox-2" />
+							<label for="checkbox-2">Checkbox 2</label>
+						</div>
+					</div>
+					<div>
+						<input type="number" placeholder="Number" />
+					</div>
+					<div>
+						<input type="url" placeholder="URL" />
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Disabled Form</legend>
+					<div>
+						<input type="text" placeholder="Disabled Text" disabled="disabled" />
+					</div>
+					<div>
+						<input type="button" value="Disabled Button" disabled="disabled" />
+					</div>
+				</fieldset>
+				<div>
+					<input type="submit" value="Submit" />
+				</div>
+			</form>
+		</section>
+		
+		<hr />
+		
+		<!-- Classes -->
+		<section id="class=">
+			<div class="row">
+				<p class="left">This paragraph is on the left.</p>
+				<p class="right">This paragraph is on the right.</p>
+			</div>
+			<p><span class="error">This is in "error" class.</span> <span class="hidden">This is in "hidden" class.</span> <span class="required">This is in "required" class.</span> </p>
+		</section>
+	</main>
+	
+	<script>
+	var c = document.getElementById("canvas");
+	var ctx = c.getContext("2d");
+	ctx.fillStyle = "#ccc";
+	ctx.fillRect(0, 0, 80, 100);
+	</script>
+</body>
+</html>
