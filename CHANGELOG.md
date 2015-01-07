@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v1.3 - January 7, 2015
+
+* Change the padding of 'ol' and 'ul'.
+
 ## v1.2 - January 4, 2015
 
 * 'ol' and 'ul' have the same margin with 'p'.
