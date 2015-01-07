@@ -45,6 +45,35 @@ legend,
 }
 
 /**
+ * They have the same 'margin'.
+ */
+
+address,
+details,
+ol,
+p,
+pre,
+table,
+ul {
+	margin: 0 0 1.14em;
+}
+
+blockquote,
+dl {
+	margin: 1.14em;
+}
+
+/**
+ * They have the same 'padding'.
+ */
+
+dd,
+ol,
+ul {
+	padding: 0 0 0 1.14em;
+}
+
+/**
  * 'details' and 'summary' are not supported by Internet Explorer and Firefox.
  * 'main' is not supported by Internet Explorer.
  * Force them to display 'block'.
@@ -135,6 +164,17 @@ sup {
 }
 
 /**
+ * Change the default of 'hr'.
+ */
+
+hr {
+	background: #000;
+	border: none;
+	height: 1px;
+	margin: 1.14em 0;
+}
+
+/**
  * Set your heading style!
  */
 
@@ -179,56 +219,11 @@ h6 {
 }
 
 /**
- * They have the same 'margin'.
- */
-
-address,
-details,
-hr,
-ol,
-p,
-pre,
-table,
-ul {
-	margin: 0 0 1.14em;
-}
-
-blockquote,
-dl {
-	margin: 1.14em;
-}
-
-/**
  * Remove the default 'background' on Internet Explorer for active state of 'a'.
  */
 
 a {
 	background: none;
-}
-
-/**
- * Set the default style for 'ol' and 'ul'.
- */
-
-ol,
-ul {
-	padding: 0 0 0 1.14em;
-}
-
-ol {
-	list-style-type: decimal;
-}
-
-ul {
-	list-style-type: disc;
-}
-
-/**
- * Give 'padding-left' for 'dd'.
- */
-
-dd {
-	padding-left: 1.14em;
 }
 
 /**
@@ -257,16 +252,6 @@ th {
 table.table-plain td,
 table.table-plain th {
 
-}
-
-/**
- * Change the default of 'hr'.
- */
-
-hr {
-	background: #000;
-	border: none;
-	height: 1px;
 }
 
 /**
