@@ -4,6 +4,9 @@ Changelog
 ## v1.3 - January 7, 2015
 
 * Change the padding of 'ol' and 'ul'.
+* 'dd', 'ol' and 'ul' have the same padding.
+* Remove 'list-style-type' of 'ol' and 'ul'.
+* Change the 'margin' of 'hr'.
 
 ## v1.2 - January 4, 2015
 
