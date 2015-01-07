@@ -1,5 +1,5 @@
 /**
- * AriBase v1.2
+ * AriBase v1.3
  * https://github.com/aristorinjuang/aribase
  * 
  * MIT license
@@ -212,7 +212,7 @@ a {
 
 ol,
 ul {
-	padding: 0 1.14em 0;
+	padding: 0 0 0 1.14em;
 }
 
 ol {
