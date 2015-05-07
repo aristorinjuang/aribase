@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v1.4 - May 7, 2015
+
+* Set the style for definition list.
+
 ## v1.3 - January 7, 2015
 
 * Change the padding of 'ol' and 'ul'.

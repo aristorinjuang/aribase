@@ -1,5 +1,5 @@
 /**
- * AriBase v1.3
+ * AriBase v1.4
  * https://github.com/aristorinjuang/aribase
  * 
  * MIT license
@@ -26,6 +26,7 @@ body {
 
 body,
 dd,
+dl,
 fieldset,
 figure,
 .list-plain,
@@ -49,7 +50,9 @@ legend,
  */
 
 address,
+dd,
 details,
+dt,
 ol,
 p,
 pre,
@@ -58,8 +61,7 @@ ul {
 	margin: 0 0 1.14em;
 }
 
-blockquote,
-dl {
+blockquote {
 	margin: 1.14em;
 }
 
@@ -67,7 +69,6 @@ dl {
  * They have the same 'padding'.
  */
 
-dd,
 ol,
 ul {
 	padding: 0 0 0 1.14em;
@@ -218,6 +219,14 @@ h6 {
 	margin: 0 0 0.71em;
 }
 
+/**
+ *	Set your style for definition list.
+ */
+
+dt {
+	font-weight: 700;
+}
+ 
 /**
  * Remove the default 'background' on Internet Explorer for active state of 'a'.
  */
