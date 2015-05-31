@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v1.5 - May 31, 2015
+
+* Fix 'dd' overriding.
+
 ## v1.4 - May 7, 2015
 
 * Set the style for definition list.
