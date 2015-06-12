@@ -1,5 +1,5 @@
 /**
- * AriBase v1.5
+ * AriBase v1.6
  * https://github.com/aristorinjuang/aribase
  * 
  * MIT license
@@ -24,12 +24,14 @@ body {
  * Remove the 'margin'.
  */
 
+blockquote > p:last-child,
 body,
 dl,
 fieldset,
-figure,
 .list-plain,
 ol ol,
+ol ul,
+ul ol,
 ul ul {
 	margin: 0;
 }
@@ -52,6 +54,7 @@ address,
 dd,
 details,
 dt,
+figure,
 ol,
 p,
 pre,
@@ -71,6 +74,17 @@ blockquote {
 ol,
 ul {
 	padding: 0 0 0 1.14em;
+}
+
+/**
+ * Set their 'max-width' to be '100%'.
+ */
+
+dl,
+iframe,
+img,
+svg {
+	max-width: 100%;
 }
 
 /**
@@ -95,12 +109,22 @@ summary {
 
 /**
  * Remove 'border' on 'img' in Internet Explorer.
- * Remove the default style of 'abbr'.
+ * Remove 'border' on 'fieldset'.
+ */
+
+fieldset,
+img {
+	border: none;
+}
+
+/**
+ * Set the default style of 'abbr' and 'acronym'.
  */
 
 abbr,
-img {
+acronym {
 	border: none;
+	text-decoration: underline;
 }
 
 /**
@@ -137,6 +161,10 @@ svg {
 /**
  * Change the default of 'font-size'.
  */
+
+big {
+	font-size: 1.28em;
+}
 
 small,
 sub,
@@ -283,13 +311,17 @@ samp {
 }
 
 /**
+ * Set 'overflow' is 'auto' for 'pre'.
+ */
+
+pre {
+	overflow: auto;
+}
+
+/**
  * The most used 'input' for form.
  * Set them with your style!
  */
-
-fieldset {
-	border: none;
-}
 
 input[type="email"],
 input[type="number"],
@@ -402,6 +434,7 @@ input[disabled="disabled"] {
 	clear: both;
 }
 
+.children,
 .list-plain {
 	list-style: none;
 }

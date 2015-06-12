@@ -1,6 +1,16 @@
 Changelog
 =========
 
+## v1.6 - June 12, 2015
+
+* Remove the margin of 'ol ul' and 'ul ol'.
+* Remove the margin of 'blockquote > p:last-child'.
+* Change the 'margin' of 'figure'.
+* Set 'dl', 'iframe', 'img' and 'svg' maximum width to be 100%.
+* Set the default style of 'abbr' and 'acronym'.
+* Set the default font-size of 'big'.
+* Set class 'children' has no 'list-style'.
+
 ## v1.5 - May 31, 2015
 
 * Fix 'dd' overriding.
