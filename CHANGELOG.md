@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v1.7 - June 17, 2015
+
+* Change 'blockquote > p:last-child' to be 'blockquote > *:last-child'.
+
 ## v1.6 - June 12, 2015
 
 * Remove the margin of 'ol ul' and 'ul ol'.

@@ -1,5 +1,5 @@
 /**
- * AriBase v1.6
+ * AriBase v1.7
  * https://github.com/aristorinjuang/aribase
  * 
  * MIT license
@@ -24,7 +24,7 @@ body {
  * Remove the 'margin'.
  */
 
-blockquote > p:last-child,
+blockquote > *:last-child,
 body,
 dl,
 fieldset,
