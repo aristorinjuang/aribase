@@ -1,5 +1,5 @@
 /**
- * AriBase v1.7
+ * AriBase v1.8
  * https://github.com/aristorinjuang/aribase
  * 
  * MIT license
@@ -51,9 +51,9 @@ legend,
  */
 
 address,
+blockquote,
 dd,
 details,
-dt,
 figure,
 ol,
 p,
@@ -61,10 +61,6 @@ pre,
 table,
 ul {
 	margin: 0 0 1.14em;
-}
-
-blockquote {
-	margin: 1.14em;
 }
 
 /**

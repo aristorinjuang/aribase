@@ -1,6 +1,11 @@
 Changelog
 =========
 
+## v1.8 - June 20, 2015
+
+* Remove margin of 'dt'.
+* Change margin of 'blockquote'.
+
 ## v1.7 - June 17, 2015
 
 * Change 'blockquote > p:last-child' to be 'blockquote > *:last-child'.
