@@ -1,6 +1,15 @@
 Changelog
 =========
 
+## v1.9 - July 13, 2015
+
+* Set 'figure > img'.
+* Set 'tt'.
+* Set 'height' of 'img' to be 'auto'.
+* Set 'max-width' of 'embed' and 'iframe' to be '100%'.
+* Remove '-webkit-search-cancel-button'.
+* Add 'white-space' for 'pre'.
+
 ## v1.8 - June 20, 2015
 
 * Remove margin of 'dt'.

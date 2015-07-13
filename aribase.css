@@ -1,5 +1,5 @@
 /**
- * AriBase v1.8
+ * AriBase v1.9
  * https://github.com/aristorinjuang/aribase
  * 
  * MIT license
@@ -77,10 +77,20 @@ ul {
  */
 
 dl,
+embed,
+figure,
 iframe,
 img,
 svg {
 	max-width: 100%;
+}
+
+/**
+ * Set the 'height' of 'img' to be 'auto'.
+ */
+
+img {
+	height: auto;
 }
 
 /**
@@ -90,6 +100,7 @@ svg {
  */
 
 details,
+figure > img,
 main,
 summary {
 	display: block;
@@ -302,7 +313,8 @@ blockquote {
 code,
 kbd,
 pre,
-samp {
+samp,
+tt {
 	font-family: "Andale Mono", "Lucida Console", monospace;
 }
 
@@ -312,6 +324,7 @@ samp {
 
 pre {
 	overflow: auto;
+	white-space: pre-wrap;
 }
 
 /**
@@ -340,6 +353,10 @@ textarea {
 	outline: none;
 	padding: 0;
 	width: 150px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
 }
 
 textarea {
