@@ -1,5 +1,5 @@
 /**
- * AriBase v1.9
+ * AriBase v1.10
  * https://github.com/aristorinjuang/aribase
  * 
  * MIT license
@@ -26,9 +26,12 @@ body {
 
 blockquote > *:last-child,
 body,
+.children,
 dl,
 fieldset,
 .list-plain,
+.list-plain ol,
+.list-plain ul,
 ol ol,
 ol ul,
 ul ol,
@@ -42,7 +45,9 @@ ul ul {
 
 fieldset,
 legend,
-.list-plain {
+.list-plain,
+.list-plain ol,
+.list-plain ul {
 	padding: 0;
 }
 
@@ -73,6 +78,14 @@ ul {
 }
 
 /**
+ * Set list style for 'ul'.
+ */
+
+ul {
+	list-style: square;
+}
+
+/**
  * Set their 'max-width' to be '100%'.
  */
 
@@ -86,11 +99,12 @@ svg {
 }
 
 /**
- * Set the 'height' of 'img' to be 'auto'.
+ * Set the 'height' of 'img' to be 'auto' and 'vertical-align' to be 'middle'.
  */
 
 img {
 	height: auto;
+	vertical-align: middle;
 }
 
 /**
@@ -323,7 +337,6 @@ tt {
  */
 
 pre {
-	overflow: auto;
 	white-space: pre-wrap;
 }
 

@@ -1,6 +1,14 @@
 Changelog
 =========
 
+## v1.10 - October 19, 2015
+
+* Add 'children' class.
+* Add 'ol' and 'ul' for 'list-plain' class.
+* Set list style for 'ul'.
+* Add 'vertical-align' as 'middle' for 'img'.
+* Remove 'overflow' for 'pre'.
+
 ## v1.9 - July 13, 2015
 
 * Set 'figure > img'.
