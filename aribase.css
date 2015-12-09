@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * AriBase v1.13
+=======
+ * AriBase v1.10
+>>>>>>> 6c836d9ed586eb70d2f885a9f63c07a8f1cc1e91
  * https://github.com/aristorinjuang/aribase
  * 
  * MIT license
@@ -303,7 +307,11 @@ th {
 	font-weight: normal;
 	padding: 0;
 	text-align: left;
+<<<<<<< HEAD
 	vertical-align: middle;
+=======
+	vertical-align: baseline;
+>>>>>>> 6c836d9ed586eb70d2f885a9f63c07a8f1cc1e91
 }
 
 table.table-plain td,
@@ -349,7 +357,10 @@ input[type="email"],
 input[type="number"],
 input[type="password"],
 input[type="search"],
+<<<<<<< HEAD
 input[type="tel"],
+=======
+>>>>>>> 6c836d9ed586eb70d2f885a9f63c07a8f1cc1e91
 input[type="text"],
 input[type="url"],
 select,
@@ -357,7 +368,11 @@ textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+<<<<<<< HEAD
 	background: #fff;
+=======
+	background: none;
+>>>>>>> 6c836d9ed586eb70d2f885a9f63c07a8f1cc1e91
 	border: 1px solid #ccc;
 	border-radius: 0;
 	box-sizing: border-box;
@@ -413,6 +428,7 @@ input[disabled="disabled"] {
 	cursor: default;
 }
 
+<<<<<<< HEAD
 button[disabled="disabled"]:hover,
 input[type="button"]:disabled:hover,
 input[type="reset"]:disabled:hover,
@@ -420,6 +436,8 @@ input[type="submit"]:disabled:hover {
 	background: #fff;
 }
 
+=======
+>>>>>>> 6c836d9ed586eb70d2f885a9f63c07a8f1cc1e91
 /**
  * Activate it to custom your selection!
  * Or delete if you don't use it!

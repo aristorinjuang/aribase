@@ -1,6 +1,7 @@
 Changelog
 =========
 
+<<<<<<< HEAD
 ## v1.13 - November 24, 2015
 
 * Set background to all input, select and textarea to be #fff.
@@ -14,6 +15,8 @@ Changelog
 
 * Change 'vertical-align' of 'td' and 'th' from 'baseline' to 'middle'.
 
+=======
+>>>>>>> 6c836d9ed586eb70d2f885a9f63c07a8f1cc1e91
 ## v1.10 - October 19, 2015
 
 * Add 'children' class.
