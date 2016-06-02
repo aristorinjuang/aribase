@@ -1,11 +1,11 @@
 /**
- * AriBase v1.13
+ * AriBase v1.14
  * https://github.com/aristorinjuang/aribase
  * 
  * MIT license
  * http://opensource.org/licenses/MIT
  * 
- * Copyright (c) 2015 Aristo Rinjuang
+ * Copyright (c) 2016 Aristo Rinjuang
  */
 
 
@@ -99,12 +99,12 @@ svg {
 }
 
 /**
- * Set the 'height' of 'img' to be 'auto' and 'vertical-align' to be 'middle'.
+ * Set the 'height' of 'img' to be 'auto' and 'vertical-align' to be 'top'.
  */
 
 img {
 	height: auto;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 /**

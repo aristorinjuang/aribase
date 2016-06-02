@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v1.14 - June 2, 2016
+
+* Set 'vertical-align' as 'top' for 'img'.
+
 ## v1.13 - November 24, 2015
 
 * Set background to all input, select and textarea to be #fff.
