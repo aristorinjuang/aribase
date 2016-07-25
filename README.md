@@ -1,7 +1,7 @@
 Aribase.css
 =======
 
-Aribase.css is a CSS file that helps you to construct your own typography for modern web browsers..
+Aribase.css is a CSS file that helps you to construct your own typography for modern web browsers.
 
 * It comes with some tags which have been styled to make them consistent on every browsers, devices and operating systems.
 * It defined some tags to prevent some bugs on cross browsers because some of them are not defined and have different appearance.
