@@ -1,5 +1,5 @@
 /**
- * Aribase.css v1.14
+ * Aribase.css v2
  * https://github.com/aristorinjuang/aribase.css
  * 
  * MIT license
@@ -9,109 +9,73 @@
  */
 
 
-/**
- * Set your 'body' typography.
- */
-
 body {
-	color: #000;
+	color: #333;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	line-height: 1.42em;
+	line-height: 1.714em;
 }
-
-/**
- * Remove the 'margin'.
- */
 
 blockquote > *:last-child,
 body,
 .children,
-dl,
 fieldset,
-.list-plain,
-.list-plain ol,
-.list-plain ul,
+ol.plain,
+ol.plain ol,
+ol.plain ul,
 ol ol,
 ol ul,
+ul.plain,
+ul.plain ol,
+ul.plain ul,
 ul ol,
 ul ul {
 	margin: 0;
 }
 
-/**
- * Remove the 'padding'.
- */
-
 fieldset,
 legend,
-.list-plain,
-.list-plain ol,
-.list-plain ul {
+ol.plain,
+ol.plain ol,
+ol.plain ul,
+ul.plain,
+ul.plain ol,
+ul.plain ul {
 	padding: 0;
 }
-
-/**
- * They have the same 'margin'.
- */
 
 address,
 blockquote,
 dd,
 details,
+dl,
 figure,
+legend,
 ol,
 p,
 pre,
 table,
 ul {
-	margin: 0 0 1.14em;
+	margin: 0 0 1.142em;
 }
 
-/**
- * They have the same 'padding'.
- */
+blockquote,
+pre {
+	overflow: auto;
+}
+
+p {
+	word-wrap: break-word;
+}
 
 ol,
 ul {
-	padding: 0 0 0 1.14em;
+	padding: 0 0 0 2.284em;
 }
-
-/**
- * Set list style for 'ul'.
- */
 
 ul {
 	list-style: square;
 }
-
-/**
- * Set their 'max-width' to be '100%'.
- */
-
-dl,
-embed,
-figure,
-iframe,
-img,
-svg {
-	max-width: 100%;
-}
-
-/**
- * Set the 'height' of 'img' to be 'auto' and 'vertical-align' to be 'top'.
- */
-
-img {
-	height: auto;
-	vertical-align: top;
-}
-
-/**
- * 'details' and 'summary' are not supported by Internet Explorer and Firefox.
- * 'main' is not supported by Internet Explorer.
- * Force them to display 'block'.
- */
 
 details,
 figure > img,
@@ -120,27 +84,16 @@ summary {
 	display: block;
 }
 
-/**
- * Remove the default 'outline' of 'summary'.
- */
+figcaption {
+	font-size: 0.857em;
+	font-style: italic;
+	padding: 5px;
+	text-align: center;
+}
 
 summary {
 	outline: none;
 }
-
-/**
- * Remove 'border' on 'img' in Internet Explorer.
- * Remove 'border' on 'fieldset'.
- */
-
-fieldset,
-img {
-	border: none;
-}
-
-/**
- * Set the default style of 'abbr' and 'acronym'.
- */
 
 abbr,
 acronym {
@@ -148,54 +101,42 @@ acronym {
 	text-decoration: underline;
 }
 
-/**
- * These tags are not defined by default.
- * Set them to be good as inline.
- */
+b,
+strong {
+	font-weight: 700;
+}
 
 audio,
 canvas,
+embed,
+iframe,
+img,
 progress,
+svg,
 video {
 	display: inline-block;
+	height: auto;
 	max-width: 100%;
-	vertical-align: baseline;
+	vertical-align: middle;
 }
-
-/**
- * Change default 'border' of 'iframe'.
- */
 
 iframe {
 	border: 1px solid #ccc;
 }
 
-/**
- * 'overflow' on 'svg' is not 'hidden' on Internet Explorer.
- * Make it 'hidden'.
- */
-
 svg {
 	overflow: hidden;
 }
 
-/**
- * Change the default of 'font-size'.
- */
-
 big {
-	font-size: 1.28em;
+	font-size: 1.285em;
 }
 
 small,
 sub,
 sup {
-	font-size: 0.72em;
+	font-size: 0.714em;
 }
-
-/**
- * Change the default style of 'sub' and 'sup'.
- */
 
 sub,
 sup {
@@ -212,20 +153,12 @@ sup {
 	top: -1ex;
 }
 
-/**
- * Change the default of 'hr'.
- */
-
 hr {
-	background: #000;
+	background: #333;
 	border: none;
 	height: 1px;
-	margin: 1.14em 0;
+	margin: 0 0 1.142em;
 }
-
-/**
- * Set your heading style!
- */
 
 h1,
 h2,
@@ -233,96 +166,116 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 600;
-	line-height: 1.2em;
+	color: #000;
+	line-height: 1.5em;
 }
 
 h1 {
 	font-size: 2em;
-	margin: 0 0 0.67em;
+	margin: 0 0 0.571em;
 }
 
 h2 {
-	font-size: 1.71em;
-	margin: 0 0 0.66em;
+	font-size: 1.714em;
+	margin: 0 0 0.666em;
 }
 
 h3 {
-	font-size: 1.42em;
+	font-size: 1.428em;
 	margin: 0 0 0.7em;
 }
 
 h4 {
-	font-size: 1.28em;
-	margin: 0 0 0.75em;
+	font-size: 1.285em;
+	margin: 0 0 0.888em;
 }
 
 h5 {
-	font-size: 1.14em;
-	margin: 0 0 0.6875em;
+	font-size: 1.142em;
+	margin: 0 0 1em;
 }
 
 h6 {
 	font-size: 1em;
-	margin: 0 0 0.71em;
+	margin: 0 0 1.142em;
 }
 
-/**
- *	Set your style for definition list.
- */
-
-dt {
+dt,
+legend {
 	font-weight: 700;
 }
- 
-/**
- * Remove the default 'background' on Internet Explorer for active state of 'a'.
- */
 
 a {
 	background: none;
+	color: #0088cc;
+	text-decoration: none;
 }
 
-/**
- * Set the default style for 'table'.
- * 'table' with 'table-plain' class means it is pure without any style.
- * Overwrite 'table' with 'table-plain' class to remove any style such as default.
- */
+a:hover {
+	text-decoration: underline;
+}
 
 table {
 	border-spacing: 0;
 	width: 100%;
 }
 
-table.table-plain {
-
-}
-
 td,
 th {
-	font-weight: normal;
-	padding: 0;
-	text-align: left;
+	border-right: 1px solid #999;
+	padding: 5px;
 	vertical-align: middle;
 }
 
-table.table-plain td,
-table.table-plain th {
-
+td:first-child,
+th:first-child {
+	border-left: 1px solid #999;
 }
 
-/**
- * Set the default style for 'blockquote'.
- */
+tbody tr:nth-child(even) th,
+thead th,
+tr:nth-child(even) td {
+	background: #eee;
+}
+
+tbody th,
+td {
+	border-bottom: 1px solid #999;
+}
+
+th {
+	color: #000;
+	text-align: left;
+}
+
+tbody tr:first-child th,
+thead th,
+tr:first-child td {
+	border-top: 1px solid #999;
+}
+
+table.plain td,
+table.plain th {
+	background: none;
+	border: none !important;
+	font-weight: 400;
+	padding: 0;
+}
 
 blockquote {
-	color: #666;
+	background: #eee;
+	border-left: 5px solid #999;
 	font-style: italic;
+	padding: 10px;
 }
 
-/**
- * Change default font of them.
- */
+blockquote code,
+blockquote kbd,
+blockquote pre,
+blockquote samp,
+blockquote tt {
+	font-style: normal;
+}
 
 code,
 kbd,
@@ -330,20 +283,39 @@ pre,
 samp,
 tt {
 	font-family: "Andale Mono", "Lucida Console", monospace;
+	font-size: 12px;
 }
-
-/**
- * Set 'overflow' is 'auto' for 'pre'.
- */
 
 pre {
 	white-space: pre-wrap;
 }
 
-/**
- * The most used 'input' for form.
- * Set them with your style!
- */
+code,
+*:not(blockquote) > pre {
+	background: #eee;
+	border: 1px solid #999;
+}
+
+code,
+pre,
+kbd {
+	padding: 5px;
+}
+
+kbd {
+	background: #333;
+	border-radius: 3px;
+	color: #fff;
+}
+
+fieldset {
+	border: none;
+}
+
+label {
+	cursor: pointer;
+	vertical-align: middle;
+}
 
 input[type="email"],
 input[type="number"],
@@ -361,12 +333,28 @@ textarea {
 	border: 1px solid #ccc;
 	border-radius: 0;
 	box-sizing: border-box;
+	color: inherit;
 	font-family: inherit;
-	font-size: 1em;
+	font-size: inherit;
+	line-height: inherit;
 	margin: 0;
+	max-width: 100%;
 	outline: none;
-	padding: 0;
-	width: 150px;
+	padding: 5px;
+	vertical-align: middle;
+	width: 380px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
+	border-color: #999;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
@@ -374,29 +362,44 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 textarea {
-	overflow: auto;
 	resize: none;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-	margin: 3px;
+	cursor: pointer;
+	margin: 0;
+	vertical-align: middle;
 }
-
-/**
- * Give them the button style!
- */
 
 a.button,
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-
+	background: #eee;
+	border: 1px solid #999;
+	box-sizing: border-box;
+	color: inherit;
+	padding: 5px;
+	width: 180px;
 }
 
 a.button {
+	display: inline-block;
+	text-align: center;
+}
 
+a.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	background: #999;
+}
+
+a.button:hover {
+	text-decoration: none;
 }
 
 button,
@@ -406,6 +409,9 @@ input[type="submit"] {
 	-webkit-appearance: none;
 	border-radius: 0;
 	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
 }
 
 button[disabled="disabled"],
@@ -417,46 +423,8 @@ button[disabled="disabled"]:hover,
 input[type="button"]:disabled:hover,
 input[type="reset"]:disabled:hover,
 input[type="submit"]:disabled:hover {
-	background: #fff;
+	background: #eee;
 }
-
-/**
- * Activate it to custom your selection!
- * Or delete if you don't use it!
- */
-
-/*
-::selection {
-
-}
-
-::-moz-selection {
-
-}
-*/
-
-/**
- * Activate it to custom your placeholder!
- * Or delete if you don't use it!
- */
-
-/*
-::-webkit-input-placeholder {
-
-}
-
-::-moz-placeholder {
-
-}
-
-:-ms-input-placeholder {
-
-}
-*/
-
-/**
- * These classes are the most used.
- */
 
 .row:after,
 .row:before {
@@ -469,16 +437,13 @@ input[type="submit"]:disabled:hover {
 }
 
 .children,
-.list-plain {
+ol.plain,
+ol.plain ol,
+ol.plain ul,
+ul.plain,
+ul.plain ol,
+ul.plain ul {
 	list-style: none;
-}
-
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
 }
 
 .hidden {
@@ -487,5 +452,34 @@ input[type="submit"]:disabled:hover {
 
 .error,
 .required {
-	color: red;
+	color: #a94442;
+}
+
+.screen-reader-text {
+	display: block;
+	height: 1px;
+	left: -9999em;
+	overflow: hidden;
+	position: fixed;
+	top: -9999em;
+	width: 1px;
+	z-index: -9999;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.alignright {
+	float: right;
+	margin-bottom: 10px;
+	margin-left: 10px;
 }
