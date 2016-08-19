@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v2.0.1 - August 19, 2016
+
+* Change `width` to `min-width` for buttons.
+
 ## v2 - August 17, 2016
 
 * No documentation.
@@ -96,7 +100,7 @@ Changelog
 
 ## v1.1 - January 2, 2015
 
-* Add "small" tag. The "font-size" is same as "sub" and "sup" size.
+* Add `small` tag. The `font-size` is same as `sub` and `sup` size.
 
 ## v1.0 - January 1, 2015
 

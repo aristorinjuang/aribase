@@ -9,4 +9,4 @@ To make the default CSS properties of HTML tags as your typography just for mode
 
 ## Usage
 
-There is no need to overwrite Aribase.css. Just update some tags with your CSS properties. You can use test.html to test your typography.
+There is no need to overwrite Aribase.css. Just update some HTML tags with your CSS properties. You can use test.html to test your typography.
