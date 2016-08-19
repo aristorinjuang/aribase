@@ -1,6 +1,0 @@
-{
-  "name": "Aribase.css",
-  "tagline": "Aribase.css is a CSS file that helps you to build your typography for modern web browsers.",
-  "body": "## Goal\r\n\r\nTo make the default CSS properties of HTML tags as your typography just for modern web browsers that support HTML5 and CSS3. To make them consistent, no bug, and no overwriting.\r\n\r\n## Usage\r\n\r\nThere is no need to overwrite Aribase.css. Just update some tags with your CSS properties. You can use test.html to test your typography.",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
