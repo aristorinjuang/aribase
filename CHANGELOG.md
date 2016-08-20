@@ -1,6 +1,13 @@
 Changelog
 =========
 
+## v2.0.2 - August 20, 2016
+
+* Fix `font-size` for input type radio and check.
+* Change `font-size` of `code`, `kbd`, `pre`, `samp`, and `tt`.
+* Fix `hr` margin.
+* Remove `big` tag.
+
 ## v2.0.1 - August 19, 2016
 
 * Change `width` to `min-width` for buttons.
