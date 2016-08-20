@@ -1,5 +1,5 @@
 /**
- * Aribase.css v2.0.1
+ * Aribase.css v2.0.2
  * https://github.com/aristorinjuang/aribase.css
  * 
  * MIT license
@@ -50,6 +50,7 @@ dd,
 details,
 dl,
 figure,
+hr,
 legend,
 ol,
 p,
@@ -128,10 +129,6 @@ svg {
 	overflow: hidden;
 }
 
-big {
-	font-size: 1.285em;
-}
-
 small,
 sub,
 sup {
@@ -157,7 +154,6 @@ hr {
 	background: #333;
 	border: none;
 	height: 1px;
-	margin: 0 0 1.142em;
 }
 
 h1,
@@ -285,7 +281,7 @@ pre,
 samp,
 tt {
 	font-family: "Andale Mono", "Lucida Console", monospace;
-	font-size: 12px;
+	font-size: 0.857em;
 }
 
 pre {
@@ -370,6 +366,7 @@ textarea {
 input[type="checkbox"],
 input[type="radio"] {
 	cursor: pointer;
+	font-size: inherit;
 	margin: 0;
 	vertical-align: middle;
 }
