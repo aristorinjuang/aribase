@@ -1,0 +1,15 @@
+{
+  "name": "aribase.css",
+  "description": "Aribase.css is a CSS file that helps you to build your typography for modern web browsers.",
+  "main": "aribase.css",
+  "keywords": [
+    "css",
+    "reset",
+    "typography",
+    "framework"
+  ],
+  "authors": [
+    "Aristo Rinjuang <contact@aristorinjuang.com> (https://aristorinjuang.com)"
+  ],
+  "license": "MIT"
+}
