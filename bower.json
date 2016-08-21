@@ -2,6 +2,7 @@
   "name": "aribase.css",
   "description": "Aribase.css is a CSS file that helps you to build your typography for modern web browsers.",
   "main": "aribase.css",
+  "license": "MIT",
   "keywords": [
     "css",
     "reset",
@@ -11,5 +12,9 @@
   "authors": [
     "Aristo Rinjuang <contact@aristorinjuang.com> (https://aristorinjuang.com)"
   ],
-  "license": "MIT"
+  "homepage": "https://aristorinjuang.github.io/aribase.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aristorinjuang/aribase.css.git"
+  }
 }
