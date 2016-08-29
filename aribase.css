@@ -1,10 +1,10 @@
 /**
- * Aribase.css v2.0.2
+ * Aribase.css v2.1
  * https://github.com/aristorinjuang/aribase.css
- * 
+ *
  * MIT license
  * http://opensource.org/licenses/MIT
- * 
+ *
  * Copyright (c) Aristo Rinjuang
  */
 
@@ -96,8 +96,7 @@ summary {
 	outline: none;
 }
 
-abbr,
-acronym {
+abbr {
 	border: none;
 	text-decoration: underline;
 }
@@ -112,6 +111,7 @@ canvas,
 embed,
 iframe,
 img,
+meter,
 progress,
 svg,
 video {
@@ -129,14 +129,13 @@ svg {
 	overflow: hidden;
 }
 
-small,
-sub,
-sup {
-	font-size: 0.714em;
+small {
+	font-size: 0.857em;
 }
 
 sub,
 sup {
+    font-size: 0.714em;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
@@ -270,16 +269,14 @@ blockquote {
 blockquote code,
 blockquote kbd,
 blockquote pre,
-blockquote samp,
-blockquote tt {
+blockquote samp {
 	font-style: normal;
 }
 
 code,
 kbd,
 pre,
-samp,
-tt {
+samp {
 	font-family: "Andale Mono", "Lucida Console", monospace;
 	font-size: 0.857em;
 }
@@ -315,13 +312,19 @@ label {
 	vertical-align: middle;
 }
 
+input[type="date"],
+input[type="datetime-local"],
 input[type="email"],
+input[type="month"],
 input[type="number"],
 input[type="password"],
 input[type="search"],
 input[type="tel"],
 input[type="text"],
+input[type="time"],
 input[type="url"],
+input[type="week"],
+keygen,
 select,
 textarea {
 	-webkit-appearance: none;
@@ -336,25 +339,32 @@ textarea {
 	font-size: inherit;
 	line-height: inherit;
 	margin: 0;
-	max-width: 100%;
 	outline: none;
 	padding: 5px;
+    transition: all 0.3s;
 	vertical-align: middle;
-	width: 380px;
+	width: 100%;
 }
 
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
 input[type="email"]:focus,
+input[type="month"]:focus,
 input[type="number"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="text"]:focus,
+input[type="time"]:focus,
 input[type="url"]:focus,
+input[type="week"]:focus,
+keygen:focus,
 select:focus,
 textarea:focus {
 	border-color: #999;
 }
 
+datalist,
 input[type="search"]::-webkit-search-cancel-button {
 	display: none;
 }
@@ -369,6 +379,30 @@ input[type="radio"] {
 	font-size: inherit;
 	margin: 0;
 	vertical-align: middle;
+}
+
+input[type="color"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    padding: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+input[type="range"] {
+    margin: 0;
+    vertical-align: middle;
+    width: 100%;
 }
 
 a.button,
@@ -389,6 +423,19 @@ a.button {
 	text-align: center;
 }
 
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	border-radius: 0;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+    width: 100%;
+}
+
 a.button:hover,
 button:hover,
 input[type="button"]:hover,
@@ -401,20 +448,9 @@ a.button:hover {
 	text-decoration: none;
 }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	-webkit-appearance: none;
-	border-radius: 0;
-	cursor: pointer;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-}
-
 button[disabled="disabled"],
-input[disabled="disabled"] {
+input[disabled="disabled"],
+keygen[disabled="disabled"] {
 	cursor: default;
 }
 
@@ -422,7 +458,7 @@ button[disabled="disabled"]:hover,
 input[type="button"]:disabled:hover,
 input[type="reset"]:disabled:hover,
 input[type="submit"]:disabled:hover {
-	background: #e74c3c;
+	background: #eee;
 }
 
 .row:after,
@@ -446,7 +482,7 @@ ul.plain ul {
 }
 
 .hidden {
-    display: none;
+	display: none;
 }
 
 .error,
