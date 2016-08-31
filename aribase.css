@@ -1,5 +1,5 @@
 /**
- * Aribase.css v2.1
+ * Aribase.css v2.1.1
  * https://github.com/aristorinjuang/aribase.css
  *
  * MIT license
@@ -173,28 +173,28 @@ h1 {
 
 h2 {
 	font-size: 1.714em;
-	margin: 0 0 0.666em;
-	text-align: center;
+	margin: 0.666em 0;
+    text-align: center;
 }
 
 h3 {
 	font-size: 1.428em;
-	margin: 0 0 0.7em;
+	margin: 0.7em 0;
 }
 
 h4 {
 	font-size: 1.285em;
-	margin: 0 0 0.888em;
+	margin: 0.888em 0;
 }
 
 h5 {
 	font-size: 1.142em;
-	margin: 0 0 1em;
+	margin: 1em 0;
 }
 
 h6 {
 	font-size: 1em;
-	margin: 0 0 1.142em;
+	margin: 1.142em 0;
 }
 
 dt,
