@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v2.1.1 - August 31, 2016
+
+* Fix `margin` for `h2` - `h6`.
+
 ## v2.1.0 - August 30, 2016
 
 * Fix `width` for input.
@@ -21,7 +25,7 @@ Changelog
 * Remove `range` tag.
 * Remove `tt` tag.
 
-## v2 - August 17, 2016
+## v2.0.0 - August 17, 2016
 
 * No documentation.
 * No empty tags.
@@ -41,6 +45,6 @@ Changelog
 * Remove `left` and `right` classes.
 * Remove selection and placeholder tags.
 
-## v1.0 - January 1, 2015
+## v1.0.0 - January 1, 2015
 
 * First release
