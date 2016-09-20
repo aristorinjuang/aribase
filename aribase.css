@@ -1,5 +1,5 @@
 /**
- * Aribase.css v2.1.1
+ * Aribase.css v2.1.2
  * https://github.com/aristorinjuang/aribase.css
  *
  * MIT license
@@ -337,7 +337,6 @@ textarea {
 	color: inherit;
 	font-family: inherit;
 	font-size: inherit;
-	line-height: inherit;
 	margin: 0;
 	outline: none;
 	padding: 5px;
@@ -370,6 +369,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 textarea {
+	line-height: inherit;
 	resize: none;
 }
 
