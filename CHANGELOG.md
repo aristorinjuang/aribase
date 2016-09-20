@@ -1,6 +1,10 @@
 Changelog
 =========
 
+## v2.1.2 - September 20, 2016
+
+* Remove `line-height` for `input`, `keygen`, and `select`.
+
 ## v2.1.1 - August 31, 2016
 
 * Fix `margin` for `h2` - `h6`.
