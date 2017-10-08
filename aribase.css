@@ -1,46 +1,47 @@
 /**
- * Aribase.css v2.1.2
+ * Aribase.css v3.0.0
  * https://github.com/aristorinjuang/aribase.css
  *
  * MIT license
- * http://opensource.org/licenses/MIT
+ * https://opensource.org/licenses/MIT
  *
- * Copyright (c) Aristo Rinjuang
+ * Copyright 2017 Aristo Rinjuang
  */
 
 
+html {
+	height: 100%;
+}
+
 body {
+	box-sizing: border-box;
 	color: #333;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.714em;
+	min-height: 100%;
+	padding-bottom: 104px;
+	position: relative;
 }
 
-blockquote > *:last-child,
+body:before {
+	content: "";
+	display: block;
+	height: 1px;
+	margin-top: -1px;
+}
+
 body,
-.children,
 fieldset,
-ol.plain,
-ol.plain ol,
-ol.plain ul,
 ol ol,
 ol ul,
-ul.plain,
-ul.plain ol,
-ul.plain ul,
 ul ol,
 ul ul {
 	margin: 0;
 }
 
 fieldset,
-legend,
-ol.plain,
-ol.plain ol,
-ol.plain ul,
-ul.plain,
-ul.plain ol,
-ul.plain ul {
+legend {
 	padding: 0;
 }
 
@@ -67,6 +68,10 @@ pre {
 
 p {
 	word-wrap: break-word;
+}
+
+p:last-child {
+	margin: 0;
 }
 
 ol,
@@ -135,7 +140,7 @@ small {
 
 sub,
 sup {
-    font-size: 0.714em;
+	font-size: 0.714em;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
@@ -161,7 +166,6 @@ h3,
 h4,
 h5,
 h6 {
-	color: #000;
 	line-height: 1.5em;
 }
 
@@ -338,7 +342,7 @@ textarea {
 	margin: 0;
 	outline: none;
 	padding: 5px;
-    transition: all 0.3s;
+	transition: all 0.3s;
 	vertical-align: middle;
 	width: 100%;
 }
@@ -380,27 +384,27 @@ input[type="radio"] {
 }
 
 input[type="color"] {
-    background: none;
-    border: none;
-    cursor: pointer;
-    height: 35px;
-    padding: 0;
-    vertical-align: middle;
-    width: 100%;
+	background: none;
+	border: none;
+	cursor: pointer;
+	height: 35px;
+	padding: 0;
+	vertical-align: middle;
+	width: 100%;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
-    padding: 0;
+	padding: 0;
 }
 
 input[type="color"]::-webkit-color-swatch {
-    border: none;
+	border: none;
 }
 
 input[type="range"] {
-    margin: 0;
-    vertical-align: middle;
-    width: 100%;
+	margin: 0;
+	vertical-align: middle;
+	width: 100%;
 }
 
 a.button,
@@ -408,17 +412,17 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background: #eee;
-	border: 1px solid #999;
+	background: #999;
+	border: none;
+	border-radius: 5px;
 	box-sizing: border-box;
-	color: inherit;
-	padding: 5px;
-    transition: all 0.3s;
+	color: #fff;
+	padding: 10px 30px;
+	transition: all 0.3s;
 }
 
 a.button {
 	display: inline-block;
-	text-align: center;
 }
 
 button,
@@ -431,7 +435,7 @@ input[type="submit"] {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
-    width: 100%;
+	width: 100%;
 }
 
 a.button:hover,
@@ -439,7 +443,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background: #999;
+	background: #333;
 }
 
 a.button:hover {
@@ -467,16 +471,6 @@ input[type="submit"]:disabled:hover {
 
 .row:after {
 	clear: both;
-}
-
-.children,
-ol.plain,
-ol.plain ol,
-ol.plain ul,
-ul.plain,
-ul.plain ol,
-ul.plain ul {
-	list-style: none;
 }
 
 .hidden {
@@ -515,4 +509,16 @@ ul.plain ul {
 	float: right;
 	margin-bottom: 10px;
 	margin-left: 10px;
+}
+
+.children {
+	margin: 0;
+}
+
+.plain,
+.plain ol,
+.plain ul {
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }

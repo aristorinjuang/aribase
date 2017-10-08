@@ -1,6 +1,12 @@
 Changelog
 =========
 
+## v3.0.0 - October 8, 2017
+
+* Change spaces to tabs.
+* Fix `plain` class.
+* Make ready for absolute-footer.
+
 ## v2.1.2 - September 20, 2016
 
 * Remove `line-height` for `input`, `keygen`, and `select`.

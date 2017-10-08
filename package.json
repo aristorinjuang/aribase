@@ -1,7 +1,7 @@
 {
   "name": "aribase.css",
-  "version": "2.1.2",
-  "description": "Aribase.css is a CSS file that helps you to build your typography for modern web browsers.",
+  "version": "3.0.0",
+  "description": "A single CSS for reset and typography. Modern, compact, lightweight, and customizable.",
   "main": "aribase.css",
   "repository": {
     "type": "git",
