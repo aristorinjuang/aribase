@@ -4,20 +4,66 @@
 		<title>Aribase.css</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Aribase.css is a CSS file that helps you to build your typography for modern web browsers." />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap:400,400i,700,700i" />
-		<link rel="stylesheet" href="aribase.css?v=2.1.2">
+
+		<meta name="description" content="A single CSS for reset and typography. Modern, compact, lightweight, and customizable." />
+		<meta name="twitter:site" content="@AristoRinjuang" />
+		<meta name="twitter:creator" content="@AristoRinjuang" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:description" content="A single CSS for reset and typography. Modern, compact, lightweight, and customizable." />
+		<meta name="twitter:image" content="https://aristorinjuang.github.io/aribase.css/aribase_og.jpg"/>
+		<meta property="og:title" content="Aribase.css" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="A single CSS for reset and typography. Modern, compact, lightweight, and customizable." />
+		<meta property="og:url" content="https://aristorinjuang.github.io/aribase.css" />
+		<meta property="og:image" content="https://aristorinjuang.github.io/aribase.css/aribase_og.jpg" />
+		<meta property="og:image:alt" content="Aribase.css" />
+		<meta property="fb:app_id" content="132378994158124" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/manifest.json" />
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" />
+		<link rel="stylesheet" href="aribase.css?v=3.0.0" />
 		<style>
 			#container {
-				margin: 30px auto;
+				margin: 60px auto;
 				max-width: 600px;
 				padding: 0 20px;
 			}
-			#download {
-				font-weight: bold;
-			}
+
 			.center {
 				text-align: center;
+			}
+
+			#install {
+				margin: 45px 0;
+			}
+
+			#footer {
+				bottom: 60px;
+				left: 0;
+				position: absolute;
+				text-align: center;
+				width: 100%;
+				z-index: 1;
+			}
+
+			a.button.install {
+				padding: 11px 30px;
+				height: 45px;
+				width: 200px;
+			}
+
+			code.install {
+				border-radius: 5px;
+				box-sizing: border-box;
+				display: inline-block;
+				padding: 10px 15px;
+				width: 200px;
 			}
 		</style>
 		<script>
@@ -33,16 +79,29 @@
 	</head>
 	<body>
 		<div id="container">
-			<h1>Aribase.css</h1>
-			<h2>Aribase.css is a CSS file that helps you to build your typography for modern web browsers.</h2>
-			<h3>Goal</h3>
-			<p>To make the default CSS properties of HTML tags as your typography just for modern web browsers that support HTML5 and CSS3. To make them consistent, no bug, and no overwriting.</p>
-			<h3>Usage</h3>
-			<p>There is no need to overwrite Aribase.css. Just update some HTML tags with your CSS properties. You can use test.html to test your typography.</p>
-			<p class="center"><a href="https://github.com/aristorinjuang/aribase.css/zipball/master" class="button">Download!</a></p>
-			<p class="center"><code>npm install aribase.css</code></p>
-			<p class="center"><code>bower install aribase.css</code></p>
-			<p class="center"><a href="https://github.com/aristorinjuang/aribase.css" target="_blank">Aribase.css</a> is maintained by <a href="https://aristorinjuang.com" target="_blank">Aristo Rinjuang</a></p>
+			<figure class="center">
+				<svg xmlns="http://www.w3.org/2000/svg" width="152" height="110" viewBox="0 0 152 110">
+					<g transform="translate(0, -365)">
+						<path style="fill:#999" d="m 170, 730 h 30 l 22, 222 -32, 0 z" transform="matrix(1, 0, 0, 0.5, -70, 0)" />
+						<path style="fill:#eee" d="m 70, 952 h 30 l 100, -222 h -30 z" transform="matrix(1, 0, 0, 0.5, -70, 0)" />
+						<path style="fill:#333" d="m 136, 952 28, -62 5, 62 z" transform="matrix(1, 0, 0, 0.5, -70, 0)" />
+					</g>
+				</svg>
+			</figure>
+			<h1 class="center">Aribase.css</h1>
+			<h2 class="center">A single CSS for reset and typography. <br />Modern, compact, lightweight, and customizable.</h2>
+			<div id="install" class="center">
+				<p><a href="https://github.com/aristorinjuang/aribase.css/zipball/master" class="button install">Download</a></p>
+				<p>or</p>
+				<p><code class="install">npm install aribase.css</code></p>
+			</div>
+			<p>Aribase.css makes easy to set up your typography. To make them consistent for modern web browsers on any devices. There is no overwriting between reset. So, you can focus on layouts.</p>
+			<ul>
+				<li>It focuses on HTML5.</li>
+				<li>It provides a minimal setup for typography.</li>
+				<li>It comes with some common-classes.</li>
+			</ul>
+			<p id="footer" class="center"><a href="https://github.com/aristorinjuang/aribase.css" target="_blank">Aribase.css</a> is maintained by <a href="https://aristorinjuang.com" target="_blank">Aristo Rinjuang</a>. Licensed under the <a href="https://github.com/aristorinjuang/aribase.css/blob/master/LICENSE.md" target="_blank">MIT License</a>.</p>
 		</div>
 	</body>
 </html>
