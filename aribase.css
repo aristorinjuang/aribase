@@ -1,11 +1,11 @@
 /**
- * Aribase.css v3.0.0
+ * Aribase.css v4.0.0
  * https://github.com/aristorinjuang/aribase.css
  *
  * MIT license
  * https://opensource.org/licenses/MIT
  *
- * Copyright 2017 Aristo Rinjuang
+ * Copyright 2018 Aristo Rinjuang
  */
 
 
@@ -20,7 +20,7 @@ body {
 	font-size: 14px;
 	line-height: 1.714em;
 	min-height: 100%;
-	padding-bottom: 104px;
+	overflow-x: hidden;
 	position: relative;
 }
 
@@ -31,8 +31,8 @@ body:before {
 	margin-top: -1px;
 }
 
+blockquote > *:last-child,
 body,
-fieldset,
 ol ol,
 ol ul,
 ul ol,
@@ -50,6 +50,7 @@ blockquote,
 dd,
 details,
 dl,
+fieldset,
 figure,
 hr,
 legend,
@@ -66,12 +67,17 @@ pre {
 	overflow: auto;
 }
 
+a,
+img {
+	transition: all 0.3s;
+}
+
 p {
 	word-wrap: break-word;
 }
 
 p:last-child {
-	margin: 0;
+	margin-bottom: 0;
 }
 
 ol,
@@ -114,7 +120,6 @@ strong {
 audio,
 canvas,
 embed,
-iframe,
 img,
 meter,
 progress,
@@ -128,6 +133,8 @@ video {
 
 iframe {
 	border: 1px solid #ccc;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 svg {
@@ -269,6 +276,12 @@ blockquote {
 }
 
 blockquote code,
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6,
 blockquote kbd,
 blockquote pre,
 blockquote samp {
@@ -409,16 +422,17 @@ input[type="range"] {
 
 a.button,
 button,
+button:disabled:hover,
 input[type="button"],
+input[type="button"]:disabled:hover,
 input[type="reset"],
 input[type="submit"] {
 	background: #999;
 	border: none;
-	border-radius: 5px;
+	border-radius: 0;
 	box-sizing: border-box;
 	color: #fff;
 	padding: 10px 30px;
-	transition: all 0.3s;
 }
 
 a.button {
@@ -430,11 +444,11 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
-	border-radius: 0;
 	cursor: pointer;
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
+	transition: all 0.3s;
 	width: 100%;
 }
 
@@ -450,27 +464,10 @@ a.button:hover {
 	text-decoration: none;
 }
 
-button[disabled="disabled"],
-input[disabled="disabled"],
-keygen[disabled="disabled"] {
+button:disabled,
+input:disabled,
+keygen:disabled {
 	cursor: default;
-}
-
-button[disabled="disabled"]:hover,
-input[type="button"]:disabled:hover,
-input[type="reset"]:disabled:hover,
-input[type="submit"]:disabled:hover {
-	background: #eee;
-}
-
-.row:after,
-.row:before {
-	content: " ";
-	display: table;
-}
-
-.row:after {
-	clear: both;
 }
 
 .hidden {

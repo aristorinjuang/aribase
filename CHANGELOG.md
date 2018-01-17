@@ -1,6 +1,18 @@
 Changelog
 =========
 
+## v4.0.0 - January 17, 2018
+
+* Fix color on disabled button.
+* Fix `border-radius` for `button`.
+* Fix `height` for `iframe`.
+* Fix `margin` for `*:last-child`.
+* Fix `margin` for `fieldset`.
+* Fix `overflow` for `body`.
+* Fix `padding` for `body`.
+* Fix `transition` for `a` and `img`.
+* Remove `.row` class.
+
 ## v3.0.0 - October 8, 2017
 
 * Change spaces to tabs.
