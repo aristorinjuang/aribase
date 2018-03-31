@@ -1,5 +1,5 @@
 /**
- * Aribase.css v4.0.0
+ * Aribase.css v4.1.0
  * https://github.com/aristorinjuang/aribase.css
  *
  * MIT license
@@ -9,15 +9,24 @@
  */
 
 
+:root {
+	--color-border-table: #999;
+	--color-font: #333;
+	--font-primary: Helvetica, Arial, sans-serif;
+	--size-font: 14px;
+	--size-small: 0.857em;
+	--transition: all 0.3s;
+ }
+
 html {
 	height: 100%;
 }
 
 body {
 	box-sizing: border-box;
-	color: #333;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	color: var(--color-font);
+	font-family: var(--font-primary);
+	font-size: var(--size-font);
 	line-height: 1.714em;
 	min-height: 100%;
 	overflow-x: hidden;
@@ -69,7 +78,7 @@ pre {
 
 a,
 img {
-	transition: all 0.3s;
+	transition: var(--transition);
 }
 
 p {
@@ -97,7 +106,7 @@ summary {
 }
 
 figcaption {
-	font-size: 0.857em;
+	font-size: var(--size-small);
 	font-style: italic;
 	padding: 5px;
 	text-align: center;
@@ -142,7 +151,7 @@ svg {
 }
 
 small {
-	font-size: 0.857em;
+	font-size: var(--size-small);
 }
 
 sub,
@@ -162,7 +171,7 @@ sup {
 }
 
 hr {
-	background: #333;
+	background: var(--color-font);
 	border: none;
 	height: 1px;
 }
@@ -228,14 +237,14 @@ table {
 
 td,
 th {
-	border-right: 1px solid #999;
+	border-right: 1px solid var(--color-border-table);
 	padding: 5px;
 	vertical-align: middle;
 }
 
 td:first-child,
 th:first-child {
-	border-left: 1px solid #999;
+	border-left: 1px solid var(--color-border-table);
 }
 
 tbody tr:nth-child(even) th,
@@ -246,7 +255,7 @@ tr:nth-child(even) td {
 
 tbody th,
 td {
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid var(--color-border-table);
 }
 
 th {
@@ -257,7 +266,7 @@ th {
 tbody tr:first-child th,
 thead th,
 tr:first-child td {
-	border-top: 1px solid #999;
+	border-top: 1px solid var(--color-border-table);
 }
 
 table.plain td,
@@ -293,10 +302,13 @@ kbd,
 pre,
 samp {
 	font-family: "Andale Mono", "Lucida Console", monospace;
-	font-size: 0.857em;
+	font-size: var(--size-small);
 }
 
 pre {
+	padding: 10px;
+	-moz-tab-size: 4;
+	tab-size: 4;
 	white-space: pre-wrap;
 }
 
@@ -307,13 +319,12 @@ code,
 }
 
 code,
-pre,
 kbd {
 	padding: 5px;
 }
 
 kbd {
-	background: #333;
+	background: var(--color-font);
 	border-radius: 3px;
 	color: #fff;
 }
@@ -328,18 +339,12 @@ label {
 }
 
 input[type="date"],
-input[type="datetime-local"],
 input[type="email"],
-input[type="month"],
 input[type="number"],
 input[type="password"],
 input[type="search"],
-input[type="tel"],
 input[type="text"],
 input[type="time"],
-input[type="url"],
-input[type="week"],
-keygen,
 select,
 textarea {
 	-webkit-appearance: none;
@@ -350,29 +355,23 @@ textarea {
 	border-radius: 0;
 	box-sizing: border-box;
 	color: inherit;
-	font-family: inherit;
-	font-size: inherit;
+	font-family: var(--font-primary);
+	font-size: var(--size-font);
+	line-height: 1em;
 	margin: 0;
 	outline: none;
-	padding: 5px;
-	transition: all 0.3s;
+	transition: var(--transition);
 	vertical-align: middle;
 	width: 100%;
 }
 
 input[type="date"]:focus,
-input[type="datetime-local"]:focus,
 input[type="email"]:focus,
-input[type="month"]:focus,
 input[type="number"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
-input[type="tel"]:focus,
 input[type="text"]:focus,
 input[type="time"]:focus,
-input[type="url"]:focus,
-input[type="week"]:focus,
-keygen:focus,
 select:focus,
 textarea:focus {
 	border-color: #999;
@@ -383,15 +382,20 @@ input[type="search"]::-webkit-search-cancel-button {
 	display: none;
 }
 
+select {
+	height: 36px;
+	padding: 0 10px;
+}
+
 textarea {
-	line-height: inherit;
+	padding: 10px;
 	resize: none;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
 	cursor: pointer;
-	font-size: inherit;
+	font-size: var(--size-font);
 	margin: 0;
 	vertical-align: middle;
 }
@@ -432,7 +436,7 @@ input[type="submit"] {
 	border-radius: 0;
 	box-sizing: border-box;
 	color: #fff;
-	padding: 10px 30px;
+	line-height: 1em;
 }
 
 a.button {
@@ -445,10 +449,9 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	cursor: pointer;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-	transition: all 0.3s;
+	font-family: var(--font-primary);
+	font-size: var(--size-font);
+	transition: var(--transition);
 	width: 100%;
 }
 
@@ -465,9 +468,23 @@ a.button:hover {
 }
 
 button:disabled,
-input:disabled,
-keygen:disabled {
+input:disabled {
 	cursor: default;
+}
+
+a.button,
+button,
+input[type="button"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="submit"],
+input[type="text"],
+input[type="time"] {
+	height: 36px;
+  padding: 10px;
 }
 
 .hidden {

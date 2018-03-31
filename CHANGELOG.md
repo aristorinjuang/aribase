@@ -1,6 +1,15 @@
 Changelog
 =========
 
+## v4.1.0 - March 31, 2018
+
+* Add CSS Variables.
+* Fix `height` for `button`, `input`, and `select`.
+* Fix `line-height` for `button` and `input`.
+* Fix `tab-size` for `pre`.
+* Remove some supports for `input` tag.
+* Remove `keygen` tag.
+
 ## v4.0.0 - January 17, 2018
 
 * Fix color on disabled button.
