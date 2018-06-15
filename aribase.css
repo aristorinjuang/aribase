@@ -1,5 +1,5 @@
 /**
- * Aribase.css v4.1.0
+ * Aribase.css v4.2.0
  * https://github.com/aristorinjuang/aribase.css
  *
  * MIT license
@@ -10,9 +10,14 @@
 
 
 :root {
+	--background: #fff;
+	--border: 1px solid #ccc;
+	--border-radius: 0;
 	--color-border-table: #999;
 	--color-font: #333;
 	--font-primary: Helvetica, Arial, sans-serif;
+	--height: 36px;
+	--padding: 10px;
 	--size-font: 14px;
 	--size-small: 0.857em;
 	--transition: all 0.3s;
@@ -40,7 +45,6 @@ body:before {
 	margin-top: -1px;
 }
 
-blockquote > *:last-child,
 body,
 ol ol,
 ol ul,
@@ -68,7 +72,7 @@ p,
 pre,
 table,
 ul {
-	margin: 0 0 1.142em;
+	margin: 1.142em 0 0;
 }
 
 blockquote,
@@ -83,10 +87,6 @@ img {
 
 p {
 	word-wrap: break-word;
-}
-
-p:last-child {
-	margin-bottom: 0;
 }
 
 ol,
@@ -306,6 +306,7 @@ samp {
 }
 
 pre {
+	line-height: 1.5em;
 	padding: 10px;
 	-moz-tab-size: 4;
 	tab-size: 4;
@@ -345,23 +346,40 @@ input[type="password"],
 input[type="search"],
 input[type="text"],
 input[type="time"],
-select,
-textarea {
+select {
+	background: var(--background);
+	border: var(--border);
+	border-radius: var(--border-radius);
+	box-sizing: border-box;
+	color: var(--color-font);
+	font-family: var(--font-primary);
+	font-size: var(--size-font);
+	outline: none;
+	transition: var(--transition);
+	width: 100%;
+}
+
+select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	background: #fff;
-	border: 1px solid #ccc;
-	border-radius: 0;
+	height: var(--height);
+	padding: 0 10px;
+}
+
+textarea {
+	background: var(--background);
+	border: var(--border);
+	border-radius: var(--border-radius);
 	box-sizing: border-box;
-	color: inherit;
+	color: var(--color-font);
 	font-family: var(--font-primary);
 	font-size: var(--size-font);
-	line-height: 1em;
-	margin: 0;
+	line-height: inherit;
 	outline: none;
+	padding: var(--padding);
+	resize: vertical;
 	transition: var(--transition);
-	vertical-align: middle;
 	width: 100%;
 }
 
@@ -382,16 +400,6 @@ input[type="search"]::-webkit-search-cancel-button {
 	display: none;
 }
 
-select {
-	height: 36px;
-	padding: 0 10px;
-}
-
-textarea {
-	padding: 10px;
-	resize: none;
-}
-
 input[type="checkbox"],
 input[type="radio"] {
 	cursor: pointer;
@@ -404,7 +412,7 @@ input[type="color"] {
 	background: none;
 	border: none;
 	cursor: pointer;
-	height: 35px;
+	height: var(--height);
 	padding: 0;
 	vertical-align: middle;
 	width: 100%;
@@ -483,8 +491,8 @@ input[type="search"],
 input[type="submit"],
 input[type="text"],
 input[type="time"] {
-	height: 36px;
-  padding: 10px;
+	height: var(--height);
+	padding: var(--padding);
 }
 
 .hidden {
@@ -513,15 +521,17 @@ input[type="time"] {
 	margin-right: auto;
 }
 
-.alignleft {
+.alignleft,
+.note-float-left {
 	float: left;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	margin-right: 10px;
 }
 
-.alignright {
+.alignright,
+.note-float-right {
 	float: right;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	margin-left: 10px;
 }
 

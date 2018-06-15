@@ -1,6 +1,16 @@
 Changelog
 =========
 
+## v4.2.0 - June 15, 2018
+
+* Add `line-height` for `pre`.
+* Add more variables.
+* Add some common classes.
+* Fix `select` tag.
+* Fix `margin` to top.
+* Fix `textarea` exclusively.
+* Remove `margin` for `input` and `select`.
+
 ## v4.1.0 - March 31, 2018
 
 * Add CSS Variables.
